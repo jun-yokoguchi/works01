@@ -1,0 +1,462 @@
+@charset "Shift_JIS";
+
+/* CSS Document */
+
+/*======================================
+　初期設定
+=======================================*/
+/*======================================
+　1.Reset
+=======================================*/
+body,div,p,form,input,select,option,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,address {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.5;
+}
+img {
+	border:0;
+}
+ul {
+	list-style: none;
+}
+
+/*======================================
+　2.Fonts
+=======================================*/
+body {
+/*   font-size: 65%;*/
+   font-family:'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック','メイリオ',Meiryo,Osaka,sans-serif;
+}
+
+
+/*======================================
+　Common
+=======================================*/
+body {
+   margin: 0;
+   padding: 0;
+   background: url(../images/back_1.gif) no-repeat fixed;
+   text-align: center;
+   width: 50%;
+   height: 100%;
+/*   font-family: "verdana", "arial", sans-serif;*/
+   font-family: 'ＭＳ Ｐゴシック', sans-serif;;
+   color: #000000;
+}
+
+
+a:link {
+   color: #b50000;
+   text-decoration: none;
+}
+a:hover {
+   color: #4a0201; 
+   text-decoration: underline;
+}
+a:visited {
+   color: #b50000;
+   text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+   padding: 10px;
+   border: 0px solid orange;
+}
+ul {
+   margin: 0;
+   padding: 0;
+}
+acronym {
+   cursor: help;
+}
+acronym:hover {
+   border-bottom: 1px solid #870b01;
+}
+/*======================================
+　初期設定ここまで
+=======================================*/
+
+
+/*======================================
+　基本レイアウト
+=======================================*/
+
+#container {
+   border: 1px solid #000000;
+   border-right: none;
+   border-bottom: 0px solid #860d01;
+   border-top: 0px solid #860d01;
+   background-color: transparent;
+   position: relative;
+   margin: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding: 0px;
+   width: 1000px;
+   text-align:left;
+   voice-family: "\"}\""; 
+   voice-family: inherit;
+   width: 754px;
+}
+#top {
+   padding: 0;
+}
+#header {
+   background: url(../images/back_1.gif) no-repeat fixed;
+   height: 150px;
+   border-bottom: 3px solid #000000;
+}
+#linkList {
+   position: reative;
+   display:block; 
+   background-color: #000000;
+   border-bottom: 0px solid #000000;
+   border-right: 0px solid #000000;
+   border-top: 0px;
+   text-aline: left;
+}
+#main {
+   position: absolute;
+   top: 153px;
+   right: 0px;
+   width: 572px;
+   color: #333333;
+   font-size: 1.0em;
+   display: block;
+/*   border-bottom: 1px solid #000000;*/
+   background-color: #ffffff;
+   min-height: 732px;
+   height: auto !important;
+   height: 736px;
+
+}
+
+
+/*======================================
+　基本レイアウト ここまで
+=======================================*/
+
+/*======================================
+　Header 
+=======================================*/
+#header h1 {
+   border: 1px solid red;
+   font-size: small;
+   margin: 0px;
+   padding: 0px;
+   display: none;
+}
+#header h2 {
+   border: 1px solid red;
+   font-size: small;
+   margin: 0px;
+   padding: 0px;
+   display: none;
+}
+
+/*======================================
+ 　topicPath
+=======================================*/
+#topicPath {
+   margin-top: 5px;
+   padding-left:10px;
+   background-color: #ffffff;
+   font-size: 72%;
+   color: #666666;
+   text-align: left;
+}
+#topicPath li {
+   display:inline;
+   margin-left:-10px;
+   padding-left:0px;
+/*   list-style-type:none;*/
+}
+#topicPath a:link, #topicPath a:active, #topicPath a:visited {
+   color: #666666;
+   text-decoration: underline;
+}
+#topicPath a:hover {
+   color: #ff0000;
+   text-decoration: underline;
+}
+
+/*======================================
+　Contents_ Page Title
+=======================================*/
+
+#intro {
+   position:relative;
+   left: 0;
+   padding: 0px;
+   width: 572px; 
+}
+
+#intro h3 {
+   background: url(/flash_1.html) ;
+   margin: 0px;
+   /*text-indent: -2000px;*/
+   height: 300px;
+   border-bottom: 1px solid #000;
+   padding: 0px;
+}
+#intro p {
+   margin: 10px;
+   text-align: left;
+   margin-top: 22px;
+   margin-left: 50px;
+   margin-right: 40px;
+   padding: 0;
+   line-height: 1.6em;
+}
+
+
+/*======================================
+　Main
+=======================================*/
+h3.blog {
+   padding-left: 200px;
+   padding-top: 50px;
+   /*height: 100px;*/
+   font-size: 1.5em;
+   /*text-indent: -2000px;*/
+}
+#main p {
+   margin-top: 0px; 
+   margin-left: 30px;
+   margin-right: 20px;
+   padding: 0;
+   line-height: 1.2;
+   font-size: 0.9em;
+   /*font-weight: bold;*/
+   /*text-indent: -2000px;*/
+}
+
+#main_01 {
+   background: url(../images/blog.gif) no-repeat top left;
+   padding: 0px;
+   padding-bottom: 0px;
+   margin: 0px;
+   margin-top: 0px;
+/*   border-right: 1px solid #000;*/
+/*   border-bottom: 1px solid #ccc;*/
+   width: 572px;
+   /*text-indent: -2000px;*/
+   background-color: #ffffff;
+   
+}
+
+/* IE8 & モダンブラウザ用（上書き指定） */
+html>/**/body 
+#main_01 {
+   padding-top: 5px;
+}
+html>/**/body 
+#main_02 {
+   padding-bottom: 35px;
+}
+
+/*======================================
+　LinkList
+=======================================*/
+#linkList ul {
+   list-style: none;
+   width: 180px;
+   margin: 0px;
+   font-family: "Times New Roman Bold",serif;
+   padding: 0px;
+   left: 0px;
+   border-bottom: 0px solid #000;
+}
+
+/*======================================
+　Navi
+=======================================*/
+#navi {
+   margin: 0;
+   font-family: "Times New Roman Bold",serif;
+   font-size: 10;
+   width: 150px;
+}
+#navi li {
+   margin: 0;
+   padding: 15px 20px 50px 0px;
+   border-bottom: 1px solid #000000;
+   height: 5px;
+   left: 0px;
+   line-height: 3em;
+   font-family: "Times New Roman Bold",serif;
+   /*background-color: #b50000;*/
+   right: 0px;
+   color: #ffffff;
+}
+#navi li:hover {
+   /*background-image: url(../images/navi_blog_o) no-repeat top left;*/
+   color: #f0f000;
+   text-decoration: none;
+}
+#navi a:link, #navi a:active, #navi a:visited {
+   font-weight: bold;
+   position: left;
+   color: #ffffff;
+}
+#navi a:hover {
+   background-color: #4a0201;
+   color: #f0f000;
+   text-decoration: none;
+}
+#navi a.c {
+   font-weight:normal;
+   text-decoration:none;
+}
+#navi h3 {
+   background: url(../images/navi_1.gif) no-repeat top left;
+   margin: 0px;
+   height: 38px;
+   border-bottom: 1px solid #000000;
+   padding: 0px; 
+   text-indent: -2000px;
+}
+
+/*======================================
+　PickUp
+=======================================*/
+#navi_02 {
+   border-right: 0px solid #000;
+   border-bottom: 0px solid #000;
+   background-color: transparent;
+   width: 180px;
+}
+
+#navi_02 h3 {
+   background:url(../images/pv.gif) no-repeat top right;
+   margin-top: 10px;
+   text-indent: -2000px;
+   height: 38px;
+   border-top: 1px solid #f8f000;
+   border-bottom: 1px solid #f8f000;
+   padding: 0px;
+}
+
+#navi_02 ul {
+   background-color: #ffffff;
+}
+#navi_02 li {
+   padding: 4px 0 1px 0;
+/*   padding: 5px 0 1px 15px;*/
+   text-align: center;
+/*   height: 50px;*/
+   line-height: 1.2em;
+   background-color: #dddddd;
+   color: #b50000;
+   border-bottom: 1px solid #000;
+   font-size: 9pt;
+}
+#navi_02 a:link, #navi_02 a:active, #navi_02 a:visited {
+   color: #b50000;
+   font-weight: bold;
+   text-decoration: none;
+}
+#navi_02 li:hover {
+   background-color: #4a0201;
+   background-image: url(../images/pv.gif);
+   background-repeat: no-repeat;
+   background-position: top right;
+   color: #ffffff;
+   text-decoration: none;
+}
+#navi_02 a:hover {
+   background-color: #4a0201;
+   color: #ffffff;
+   text-decoration: none;
+}
+
+/*======================================
+　Links
+=======================================*/
+#navi_03 {
+   border-right: 0px solid #000;
+   border-bottom: 0px solid #000;
+   background-color: #ffffff;
+   width: 180px;
+   background-position: bottom right;
+   background-repeat: no-repeat;
+}
+#navi_03 h3 {
+   background:url(../images/movie.gif) no-repeat top left;
+   margin: 0px;
+   text-indent: -2000px;
+   height: 38px;
+   border-bottom: 1px solid #000;
+   padding: 0px;
+}
+#navi_03 li {
+   padding: 4px 0 1px 0;
+/*   padding: 5px 0 1px 15px;*/
+   text-align: center;
+/*   height: 50px;*/
+   line-height: 1.2em;
+   background-color: #dddddd;
+   color: #b50000;
+   border-bottom: 1px solid #000;
+   font-size: 9pt;
+}
+#navi_03 li:hover {
+   background-color: #4a0201;
+   background-image: url(../images/li_hi.gif);
+   background-repeat: no-repeat;
+   background-position: top right;
+   color: #ffffff;
+   text-decoration: none;
+}
+#navi_03 a:link, #navi_03 a:active, #navi_03 a:visited {
+   color: #b50000;
+   font-weight: bold;
+}
+#navi_03 a:hover {
+   background-color: #4a0201;
+   color: #ffffff;
+   text-decoration: none;
+}
+
+
+/*======================================
+　Footer
+=======================================*/
+#footer {
+   margin: 0px;
+   width: 753px;
+   height: 5.0em;
+   line-height: 2.5em;
+   font-size: 9pt;
+   text-align: center;
+   background-color: #000000;
+   margin-top: 0px;
+   border-top: 5px solid #ccc;
+   border-right: 1px solid #000000;
+   border-bottom: 5px solid #860d01; 
+}
+
+#footer a:link, #footer a:active, #footer a:visited {
+   color: #ffffff;
+   font-weight: bold;
+}
+#footer a:hover {
+   color: #f0f000;
+}
+
+/*======================================
+　Copy Right
+=======================================*/
+#footer p {
+   margin: 10px; 
+   margin-left: 2px;
+   margin-right: 20px;
+   padding: 0;
+   line-height: 1.5em;
+   font-size: 9pt;
+   text-align: center;
+   color: #777777;
+}
